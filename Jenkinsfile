@@ -60,7 +60,7 @@ pipeline {
     stage('Commit & Push') {
       steps {
         dir("gitops-argocd/jenkins-demo") {
-          sh "git config --global user.email 'mayank123modi@gmail.com'"
+          sh "git config --global user.email 'nikhilsudarsan91@gmail.com'"
           sh 'git remote set-url origin https://$GITEA_TOKEN@github.com/nikhil-sudarsan/gitops-argocd'
           sh 'git checkout main'
           sh 'git add -A'
